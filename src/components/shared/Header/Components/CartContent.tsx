@@ -1,9 +1,19 @@
+import { useState } from 'react';
 import {
-    SheetContent,
     SheetTitle,
-} from "@/components/ui/sheet"
+} from "@/components/ui/sheet";
 
 function CartContent() {
+    const [quantity, setQuantity] = useState(1);
+
+    const incrementQuantity = () => {
+        setQuantity((prevQuantity) => prevQuantity + 1);
+    };
+
+    const decrementQuantity = () => {
+        setQuantity((prevQuantity) => (prevQuantity > 1 ? prevQuantity - 1 : 1));
+    };
+
     return (
         <>
             <SheetTitle className='bg-black text-white px-[40px] py-[30px] font-prompt font-black text-[22px] uppercase'>Cart</SheetTitle>
@@ -24,20 +34,26 @@ function CartContent() {
                                 </p>
                                 <div className='flex justify-between items-center'>
                                     <div className="flex gap-[20px] items-center">
-                                        <button className="text-xl font-bold outline-none">
+                                        <button 
+                                            className="text-xl font-bold outline-none" 
+                                            onClick={decrementQuantity}
+                                        >
                                             -
                                         </button>
                                         <span className="mx-2">
-                                            1
+                                            {quantity}
                                         </span>
-                                        <button className="text-xl font-bold outline-none">
+                                        <button 
+                                            className="text-xl font-bold outline-none" 
+                                            onClick={incrementQuantity}
+                                        >
                                             +
                                         </button>
                                     </div>
 
                                     <div className="flex items-center justify-between">
                                         <p className="text-lg font-bold">
-                                            130,00 €
+                                            {130.00 * quantity} €
                                         </p>
                                     </div>
                                 </div>
@@ -52,9 +68,9 @@ function CartContent() {
                     </div>
 
                 </div>
-                <div className="  pt-4">
+                <div className="pt-4">
                     <h2 className="text-xl font-bold">
-                        TOTAL 130,00 €
+                        TOTAL {130.00 * quantity} €
                     </h2>
                     <p className="text-sm text-gray-500">
                         Shipping calculated at checkout
