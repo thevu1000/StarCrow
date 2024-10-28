@@ -173,6 +173,7 @@ const Header = () => {
                     <OpenMenuIcon className='cursor-pointer h-[20px]' />
                   </div>
                 </SheetTrigger>
+                <SheetTitle className='hidden'></SheetTitle>
                 <SheetContent className='lg:w-[30vw] w-[100vw] !max-w-[none]'>
                   <div>
                     <ul className="uppercase flex flex-col gap-[5px] font-prompt font-black text-[40px]">
