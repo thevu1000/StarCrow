@@ -1,0 +1,85 @@
+.menu-item {
+    position: relative;
+
+    &::before,
+    &::after {
+        background-color: currentColor;
+        transform: scaleX(0) translateZ(0);
+        transition: transform 0.6s cubic-bezier(.785, .135, .15, .86);
+        bottom: 0;
+        content: "";
+        position: absolute;
+        width: 50%;
+    }
+
+    &::before {
+        left: 0;
+        transform-origin: right;
+    }
+
+    &::after {
+        right: 0;
+        transform-origin: left;
+    }
+
+    &:hover {
+        &::before,
+        &::after {
+            transform: scaleX(1) translateZ(0);
+        }
+    }
+
+    &:not(:hover) {
+        &::before {
+            transform-origin: left;
+        }
+
+        &::after {
+            transform-origin: right;
+        }
+    }
+
+    &.active {
+        &:hover {
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &.reverse {
+        &::before,
+        &::after {
+            transform: scaleX(1) translateZ(0); // Mặc định hiển thị
+            top: 100%;
+        }
+
+        &::before {
+            left: 50%;
+            transform-origin: right; // Đổi vị trí với `right`
+        }
+
+        &::after {
+            right: 50%;
+            transform-origin: left ; // Đổi vị trí với `left`
+        }
+
+        &:hover {
+            &::before,
+            &::after {
+                transform: scaleX(0) translateZ(0); // Mất khi hover
+            }
+        }
+
+        &:not(:hover) {
+            &::before {
+                transform-origin: left;
+            }
+    
+            &::after {
+                transform-origin: right;
+            }
+        }
+    }
+}
