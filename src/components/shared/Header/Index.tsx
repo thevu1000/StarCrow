@@ -181,7 +181,7 @@ const Header = () => {
                         item.sheet ? (
                           <Sheet key={index}>
                             <SheetTrigger asChild>
-                              <li className={`${item.isActive ? 'active px-[8px] w-fit bg-black text-white rounded-[8px]' : ''}`}>
+                              <li className={`cursor-pointer ${item.isActive ? 'active px-[8px] w-fit bg-black text-white rounded-[8px]' : ''}`}>
                                 {item.title}
                               </li>
                             </SheetTrigger>
