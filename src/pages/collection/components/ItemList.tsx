@@ -73,7 +73,7 @@ function ItemList({ filter, footwearItems }: ItemListProps) {
                                 </div>
                             </SheetTrigger>
 
-                            <SheetContent className="p-0 text-white w-[40vw] h-[100vh] !max-w-[none]">
+                            <SheetContent className="p-0 text-white lg:w-[40vw] w-[100vw] h-[100vh] !max-w-[none]">
                                 <SheetTitle className="text-white font-black uppercase font-prompt text-[20px] p-8 bg-black">
                                     Filtrer et trier
                                 </SheetTitle>
