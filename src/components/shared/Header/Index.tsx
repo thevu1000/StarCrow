@@ -252,7 +252,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className={`container flex items-center h-[70px] w-full mx-auto fixed z-30 bg-white ${showSearch ? 'top-0' : 'top-[-100%]'}`}>
+        <div className={`container flex items-center lg:h-[70px] h-[100px] w-full mx-auto fixed z-30 bg-white ${showSearch ? 'top-0' : 'top-[-100%]'}`}>
           <div className='flex justify-between items-center w-full'>
             <input type="text" placeholder="SEARCH" className="flex-1 w-full py-[5px] text-4xl font-bold text-gray-300 border-none focus:outline-none" />
             <div className="cursor-pointer" onClick={handleShowSearch}>
