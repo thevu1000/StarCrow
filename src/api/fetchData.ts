@@ -8,8 +8,10 @@ export const fetchProducts = async () => {
     return response.json();
 };
 
-export const fetchProductsByBrandAndType = async (brand: string, type: string) => {
-    const response = await fetch(`http://localhost:5000/products?type=${type}&brand=${brand}`);
+export const fetchProductsByBrandAndType = async (brand: string, type: string, currenpage: number, pagesize: number) => {
+    let start = (currenpage - 1) * pagesize;
+    
+    const response = await fetch(`http://localhost:5000/products?type=${type}&brand=${brand}&_start=${start}&_limit=${pagesize}`);
     if (!response.ok) {
         throw new Error('Network response was not ok');
     }
@@ -53,16 +55,6 @@ export const fetchProductById = async (id: number) => {
         throw new Error('Network response was not ok');
     }
 
-    return response.json();
-};
-
-export const fetchProductsByType = async (type: string) => {
-    const response = await fetch(`http://localhost:5000/products?type=${type}`);
-    
-    if (!response.ok) {
-        throw new Error('Network response was not ok');
-    }
-    
     return response.json();
 };
 

@@ -35,9 +35,10 @@ interface ItemListProps {
     brandName: string;
     type: string;
     url: string;
+    total: number;
 }
 
-function ItemList({ filter, footwearItems, brandName, type, url }: ItemListProps) {
+function ItemList({ filter, footwearItems, brandName, type, url, total }: ItemListProps) {
     const [openAccordionIndex, setOpenAccordionIndex] = useState<number | null>(null);
     
     const handleAccordionToggle = (index: number) => {
@@ -61,7 +62,6 @@ function ItemList({ filter, footwearItems, brandName, type, url }: ItemListProps
                 <div>
                     <h1 className="uppercase font-black font-prompt lg:text-[40px] text-[26px] w-fit flex gap-[10px]">
                         {displayName}
-                        <p className="text-gray-500 text-[20px] font-black font-prompt lg:static bottom-0 right-0">{itemQuantity}</p>
                     </h1>
                 </div>
 

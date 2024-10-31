@@ -10,7 +10,7 @@ function CollectionSheet() {
                     <SheetTitle className='fixed w-full z-[1] font-black p-8 text-[20px] font-prompt uppercase bg-black text-white'>Footwear</SheetTitle>
                     <div className='px-8 py-8 pt-[120px] z-[0]'>
                         <div>
-                            <Link to="/collections/footwear" className='uppercase font-black font-prompt menu-item reverse text-black before:h-[3px] after:h-[3px]'>
+                            <Link to="/collections/footwear?page=1" className='uppercase font-black font-prompt menu-item reverse text-black before:h-[3px] after:h-[3px]'>
                                 all product
                             </Link>
                         </div>
