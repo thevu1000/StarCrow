@@ -19,16 +19,10 @@ type ProductCardProps = {
 };
 
 const ProductCard = ({ product, fontSize }: ProductCardProps) => {
-    let img
-    if(product.img) {
-        img = product.img
-    } else { 
-        img = "https://placehold.co/600x400"
-    }
     return (
 
         <div className="mx-auto w-full bg-white rounded-lg shadow-sm overflow-hidden relative group">
-            <img className="w-full object-cover" src={img} alt={product.brand}/>
+            <img className="w-full object-cover" src={product.img} alt={product.brand}/>
             <Link to={`/products/${product.id}`}>
                 <div className="p-4 relative z-10 bg-white">
                     <h2 className="text-[14px] font-black text-gray-800 uppercase">{product.brand}</h2>

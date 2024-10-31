@@ -47,14 +47,14 @@ function Collection() {
     firstPart,
     secondPart,
     currentPage,
-    12
+    20
   );
 
   if (isLoadingTotal || isLoadingProducts) {
     return <div>Loading...</div>;
   }
 
-  const itemsPerPage = 12;
+  const itemsPerPage = 20;
   const totalItems = totalItemsData || 0;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
