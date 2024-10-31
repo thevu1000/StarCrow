@@ -9,8 +9,9 @@ interface PaginationProps {
 
 function Pagination({ total, itemsPerPage }: PaginationProps) {
     const { currentPage, setCurrentPage } = usePaginationStore();
-    const totalPages = Math.ceil(total / itemsPerPage);
-    const pagesArray = Array.from({ length: totalPages }, (_, i) => i + 1);
+    const pagesArray = new Array(total).fill(0);
+    console.log(pagesArray);
+    
 
     return (
         <div className="flex items-center space-x-4 font-prompt font-black container mx-auto justify-center relative">
@@ -18,19 +19,19 @@ function Pagination({ total, itemsPerPage }: PaginationProps) {
                 className="w-8 h-8 flex items-center justify-center bg-gray-800 text-white rounded-full absolute left-[7%]"
                 to={`?page=${currentPage - 1}`}
                 onClick={() => setCurrentPage(currentPage - 1)}
-                style={{ pointerEvents: currentPage === 1 ? 'none' : 'auto' }}
+                style={{ display: currentPage === 1 ? 'none' : 'flex' }}
             >
                 <Chevron className="h-[15px] rotate-[-270deg] text-white" />
             </Link>
             <div className="flex gap-8">
-                {pagesArray.map((i) => (
+                {pagesArray.map((item,index) => (
                     <Link
-                        key={i}
-                        className={`text-[30px] ${currentPage === i ? 'text-gray-500 font-bold' : 'text-gray-400'} cursor-pointer`}
-                        to={`?page=${i}`}
-                        onClick={() => setCurrentPage(i)}
+                        key={index}
+                        className={`text-[30px] ${currentPage === index + 1 ? 'text-gray-500 font-bold' : 'text-gray-400'} cursor-pointer`}
+                        to={`?page=${index + 1}`}
+                        onClick={() => setCurrentPage(index + 1)}
                     >
-                        {i}
+                        {index + 1}
                     </Link>
                 ))}
             </div>
@@ -39,7 +40,7 @@ function Pagination({ total, itemsPerPage }: PaginationProps) {
                 className="w-8 h-8 flex items-center justify-center bg-gray-800 text-white rounded-full absolute right-[7%]"
                 to={`?page=${currentPage + 1}`}
                 onClick={() => setCurrentPage(currentPage + 1)}
-                style={{ pointerEvents: currentPage === totalPages ? 'none' : 'auto' }}
+                style={{ display: currentPage === total ? 'none' : 'flex' }}
             >
                 <Chevron className="h-[15px] rotate-[270deg] text-white" />
             </Link>

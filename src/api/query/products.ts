@@ -5,7 +5,7 @@ import {
     fetchProductsByIdRange,
     fetchRandomProducts,
     fetchProductById,
-    fetchAllProductByBrand
+    fetchAllProductByBrandAndType
 } from '@/api/fetchData';
 import { Product } from "@/types/type";
 
@@ -70,10 +70,10 @@ export const useFetchAllProducts = (): UseQueryResult<Product[], Error> => {
     });
 };
 
-export const useFetchTotalProductsByBrand = (brand: string): UseQueryResult<number, Error> => {
+export const useFfetchAllProductByBrandAndType = (brand: string, type: string): UseQueryResult<number, Error> => {
     return useQuery({
-        queryKey: ['totalProductsByBrand', brand],
-        queryFn: () => fetchAllProductByBrand(brand),
+        queryKey: ['totalProductsByBrand', brand, type],
+        queryFn: () => fetchAllProductByBrandAndType(brand, type),
         refetchOnMount: false,
         refetchOnWindowFocus: false,
         staleTime: 1000 * 60 * 5,

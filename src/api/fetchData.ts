@@ -63,8 +63,11 @@ export const fetchProductById = async (id: number) => {
     return response.json();
 };
 
-export const fetchAllProductByBrand = async (brand: string): Promise<number> => {
-    const response = await fetch(`http://localhost:5000/products?brand=${brand}`);
+export const fetchAllProductByBrandAndType = async (brand: string, type: string): Promise<number> => {
+    const url = brand 
+        ? `http://localhost:5000/products?brand=${brand}`
+        : `http://localhost:5000/products?type=${type}`;
+    const response = await fetch(`${url}`);
     if (!response.ok) {
         throw new Error('Network response was not ok');
     }

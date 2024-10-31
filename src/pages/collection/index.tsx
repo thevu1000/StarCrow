@@ -4,7 +4,7 @@ import Contact from "../../components/shared/Contact";
 import ItemList from "./components/ItemList";
 import Pagination from "../../components/shared/Pagination";
 import { useLocation, useParams } from "react-router-dom";
-import { useFetchProductsByBrandAndType, useFetchTotalProductsByBrand } from "@/api/query/products";
+import { useFetchProductsByBrandAndType, useFfetchAllProductByBrandAndType } from "@/api/query/products";
 import { usePaginationStore } from "@/stores/stores";
 import { Product, FilterOption } from "@/types/type";
 
@@ -41,8 +41,8 @@ function Collection() {
     firstPart = '';
   }
 
-  const { data: totalItemsData, isLoading: isLoadingTotal } = useFetchTotalProductsByBrand(firstPart);
-
+  const { data: totalItemsData, isLoading: isLoadingTotal } = useFfetchAllProductByBrandAndType(firstPart, secondPart);
+  
   const { data: productsData, isLoading: isLoadingProducts } = useFetchProductsByBrandAndType(
     firstPart,
     secondPart,
@@ -50,14 +50,13 @@ function Collection() {
     12
   );
 
-  const totalItems = totalItemsData || 0;
-
-  const itemsPerPage = 12;
-  const totalPages = Math.ceil(totalItems / itemsPerPage);
-
   if (isLoadingTotal || isLoadingProducts) {
     return <div>Loading...</div>;
   }
+
+  const itemsPerPage = 12;
+  const totalItems = totalItemsData || 0;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
 
   const filter: FilterOption[] = [
     {
