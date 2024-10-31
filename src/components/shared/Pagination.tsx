@@ -1,5 +1,5 @@
 import { Chevron } from "@/components/shared/Icon";
-import { usePaginationStore } from "@/stores/stores"; // Import the Zustand store
+import { usePaginationStore } from "@/stores/stores";
 import { Link } from "react-router-dom";
 
 interface PaginationProps {

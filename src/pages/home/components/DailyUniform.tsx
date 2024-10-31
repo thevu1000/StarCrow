@@ -25,9 +25,9 @@ function DailyUniform() {
             </div>
 
             {isLoading ? (
-                <div>loading</div> // Hiển thị khi đang tải
+                <div>loading</div>
             ) : error ? (
-                <div>Đã có lỗi xảy ra: {error.message}</div> // Hiển thị khi có lỗi
+                <div>Đã có lỗi xảy ra: {error.message}</div>
             ) : (
                 <div>
                     <div className='text-center mb-[20px]'>

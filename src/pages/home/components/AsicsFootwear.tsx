@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"; // Import useEffect and useState
+import React, { useEffect, useState } from "react";
 import {
     Carousel,
     CarouselContent,
@@ -17,7 +17,7 @@ interface Product {
     description: string;
     price: string;
     brand: string;
-    options: []; // Cập nhật kiểu nếu cần
+    options: [];
 }
 
 function AsicsFootwear() {
