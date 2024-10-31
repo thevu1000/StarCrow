@@ -9,16 +9,19 @@ import { CartIcon, CloseIcon, FacbookIcon, GlobalIcon, InstaIcon, LocationIcon, 
 import InfiniteSlider from '../InfiniteSlider';
 import CartContent from './Components/CartContent';
 import { Link } from 'react-router-dom';
-import { ScrollArea } from '@/components/ui/scroll-area';
-import CollectionSheet from './Components/CollectionSheet';
+import useCartStore from '@/stores/stores';
+import CollectionSheetFootWear from './Components/CollectionSheetFootWear';
+import CollectionSheetClothing from './Components/CollectionSheetClothing';
 
 const Header = () => {
   const [showHeader, setShowHeader] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
+  const cartItems = useCartStore(state => state.items);
   const [showCart, setShowCart] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [activeMenuItem, setActiveMenuItem] = useState(null);
   const [selectedLanguage, setSelectedLanguage] = useState('en');
-
+  const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
   useEffect(() => {
     const handleScroll = () => {
       setShowHeader(window.scrollY > 30);
@@ -73,7 +76,7 @@ const Header = () => {
       link: '/account/login',
     },
     {
-      title: 'cart (0)', // Display cart item count dynamically
+      title: `cart (${totalItems})`,
       onClick: handleShowCart,
     }
   ];
@@ -185,7 +188,11 @@ const Header = () => {
                                 {item.title}
                               </li>
                             </SheetTrigger>
-                            <CollectionSheet />
+                            {item.title === "footwear" ? (
+                              <CollectionSheetFootWear a={item.title} />
+                            ) : (
+                              <CollectionSheetClothing a={item.title} />
+                            )}
                           </Sheet>
                         ) : (
                           <li key={index} className={`${item.isActive ? 'active px-[8px] w-fit bg-black text-white rounded-[8px]' : ''}`}>
@@ -295,12 +302,16 @@ const Header = () => {
             {menuB.map((item, index) => (
               item.sheet ? (
                 <Sheet key={index}>
-                  <SheetTrigger asChild className='cursor-pointer'>
-                    <li className={`${item.isActive ? 'active px-[8px] w-fit bg-black text-white rounded-[8px]' : ''}`}>
+                  <SheetTrigger asChild>
+                    <li className={`cursor-pointer ${item.isActive ? 'active px-[8px] w-fit bg-black text-white rounded-[8px]' : ''}`}>
                       {item.title}
                     </li>
                   </SheetTrigger>
-                  <CollectionSheet />
+                  {item.title === "footwear" ? (
+                    <CollectionSheetFootWear a={item.title} />
+                  ) : (
+                    <CollectionSheetClothing a={item.title} />
+                  )}
                 </Sheet>
               ) : (
                 <li key={index} className={`${item.isActive ? 'active px-[8px] w-fit bg-black text-white rounded-[8px]' : ''}`}>

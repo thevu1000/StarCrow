@@ -32,23 +32,36 @@ interface FilterOption {
 interface ItemListProps {
     filter: FilterOption[];
     footwearItems: Product[];
+    brandName: string;
+    type: string;
+    url: string;
 }
 
-function ItemList({ filter, footwearItems }: ItemListProps) {
+function ItemList({ filter, footwearItems, brandName, type, url }: ItemListProps) {
     const [openAccordionIndex, setOpenAccordionIndex] = useState<number | null>(null);
-
+    
     const handleAccordionToggle = (index: number) => {
         setOpenAccordionIndex(prevIndex => (prevIndex === index ? null : index));
     };
 
+    const itemQuantity = footwearItems.length;
+    
+    const isOutlet = url === '/collections/outlet';
+    let displayName = isOutlet ? 'Outlet' : ` ${brandName} ${type}`;
+    if (isOutlet) {
+        displayName = 'Outlet';
+    } else if (!brandName && type) {
+        displayName = type;
+    } else {
+        displayName = `${brandName} ${type}`;
+    }
     return (
         <div className="container mx-auto">
             <div className="flex justify-between flex-col lg:flex-row">
                 <div>
                     <h1 className="uppercase font-black font-prompt lg:text-[40px] text-[26px] w-fit flex gap-[10px]">
-                        Starcow Clothing
-                    <p className="text-gray-500 text-[20px] font-black font-prompt lg:static bottom-0 right-0">204</p>
-
+                        {displayName}
+                        <p className="text-gray-500 text-[20px] font-black font-prompt lg:static bottom-0 right-0">{itemQuantity}</p>
                     </h1>
                 </div>
 
@@ -116,7 +129,7 @@ function ItemList({ filter, footwearItems }: ItemListProps) {
                 </div>
             </div>
 
-            <div className="grid lg:grid-cols-4 grid-cols-2 lg:grid-rows-5 gap-[30px]">
+            <div className="grid lg:grid-cols-4 grid-cols-2 gap-[30px]">
                 {footwearItems.map((item) => (
                     <ProductCard key={item.id} product={item} />
                 ))}

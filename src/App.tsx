@@ -8,9 +8,13 @@ import Blogs from './pages/blogs'
 import Abbout from './pages/about'
 import Pages from './pages/pages'
 import ProductDetail from './pages/productDetail'
+import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
+    <QueryClientProvider client={queryClient}>
     <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/pages/nos-magasins' element={<Stores />} />
@@ -21,6 +25,7 @@ function App() {
         <Route path='/pages/:page' element={<Pages />} />
         <Route path='/products/:productId' element={<ProductDetail />} />
     </Routes>
+    </QueryClientProvider>
   )
 }
 

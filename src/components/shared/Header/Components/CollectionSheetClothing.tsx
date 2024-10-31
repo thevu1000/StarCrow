@@ -7,10 +7,10 @@ function CollectionSheet() {
         <SheetContent className='p-0 text-white flex gap-0 flex-row-reverse lg:w-[60vw] w-[100vw] !max-w-[none]'>
             <ScrollArea className='relative lg:w-1/2 w-full'>
                 <div>
-                    <SheetTitle className='fixed w-full z-[1] font-black p-8 text-[20px] font-prompt uppercase bg-black text-white'>Footwear</SheetTitle>
+                    <SheetTitle className='fixed w-full z-[1] font-black p-8 text-[20px] font-prompt uppercase bg-black text-white'>Clothing</SheetTitle>
                     <div className='px-8 py-8 pt-[120px] z-[0]'>
                         <div>
-                            <Link to="/collections/outlet" className='uppercase font-black font-prompt menu-item reverse text-black before:h-[3px] after:h-[3px]'>
+                            <Link to="/collections/clothing" className='uppercase font-black font-prompt menu-item reverse text-black before:h-[3px] after:h-[3px]'>
                                 all product
                             </Link>
                         </div>
@@ -19,34 +19,49 @@ function CollectionSheet() {
                             <div>
                                 <h3 className='font-black text-[20px] uppercase'>Marques</h3>
                                 <ul>
-                                    {["Starcrow", "Adidas", "Arc'Teryx", "Asics", "Birkenstock", "Blundstone", "Clarks", "Converse", "Crocs", "Danner", "DC Shoes", "Etonic", "Flower Mountain", "Hoka", "Jason Markk", "Karhu"].map((brand) => (
-                                        <li key={brand} className='menu-item before:h-[1px] after:h-[1px] w-fit cursor-pointer'>
-                                            <Link to="/collections/outlet">{brand}</Link>
-                                        </li>
-                                    ))}
+                                    {["starcow", "Adidas", "Arc'Teryx", "Asics", "Birkenstock", "Blundstone", "Clarks", "Converse", "Crocs", "Danner", "DC Shoes", "Etonic", "Flower Mountain", "Hoka", "Jason Markk", "Karhu"].map((brand) => {
+                                        const displayBrand = brand.charAt(0).toUpperCase() + brand.slice(1).toLowerCase();
+
+                                        return (
+                                            <li key={brand} className='menu-item before:h-[1px] after:h-[1px] w-fit cursor-pointer'>
+                                                <Link to={`/collections/${brand.toLowerCase()}-clothing`}>{displayBrand}</Link>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
+
                             </div>
 
                             <div>
                                 <h3 className='font-black text-[20px] uppercase'>Marques</h3>
                                 <ul>
-                                    {["Starcrow", "Adidas", "Arc'Teryx", "Asics", "Birkenstock", "Blundstone", "Clarks", "Converse", "Crocs", "Danner", "DC Shoes", "Etonic", "Flower Mountain", "Hoka", "Jason Markk", "Karhu"].map((brand) => (
-                                        <li key={brand} className='menu-item before:h-[1px] after:h-[1px] w-fit cursor-pointer'>
-                                            <Link to="/collections/outlet">{brand}</Link>
-                                        </li>
-                                    ))}
+                                    {["starcow", "Adidas", "Arc'Teryx", "Asics", "Birkenstock", "Blundstone", "Clarks", "Converse", "Crocs", "Danner", "DC Shoes", "Etonic", "Flower Mountain", "Hoka", "Jason Markk", "Karhu"].map((brand) => {
+                                        const displayBrand = brand.charAt(0).toUpperCase() + brand.slice(1).toLowerCase();
+
+                                        return (
+                                            <li key={brand} className='menu-item before:h-[1px] after:h-[1px] w-fit cursor-pointer'>
+                                                <Link to={`/collections/${brand.toLowerCase()}`}>{displayBrand}</Link>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
+
                             </div>
 
                             <div>
                                 <h3 className='font-black text-[20px] uppercase'>Marques</h3>
                                 <ul>
-                                    {["Starcrow", "Adidas", "Arc'Teryx", "Asics", "Birkenstock", "Blundstone", "Clarks", "Converse", "Crocs", "Danner", "DC Shoes", "Etonic", "Flower Mountain", "Hoka", "Jason Markk", "Karhu"].map((brand) => (
-                                        <li key={brand} className='menu-item before:h-[1px] after:h-[1px] w-fit cursor-pointer'>
-                                            <Link to="/collections/outlet">{brand}</Link>
-                                        </li>
-                                    ))}
+                                    {["starcow", "Adidas", "Arc'Teryx", "Asics", "Birkenstock", "Blundstone", "Clarks", "Converse", "Crocs", "Danner", "DC Shoes", "Etonic", "Flower Mountain", "Hoka", "Jason Markk", "Karhu"].map((brand) => {
+                                        const displayBrand = brand.charAt(0).toUpperCase() + brand.slice(1).toLowerCase();
+
+                                        return (
+                                            <li key={brand} className='menu-item before:h-[1px] after:h-[1px] w-fit cursor-pointer'>
+                                                <Link to={`/collections/${brand.toLowerCase()}`}>{displayBrand}</Link>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
+
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,1533 @@
+{
+    "brands": {
+        "clothing": [
+            "patta",
+            "starcow",
+            "bricks & wood",
+            "ugg",
+            "dickies",
+            "gramicci",
+            "adidas",
+            "arc'teryx"
+        ],
+        "footwear": [
+            "starcow",
+            "adidas",
+            "arc'teryx",
+            "asics",
+            "birkenstock",
+            "blundstone",
+            "clarks",
+            "converse",
+            "crocs",
+            "dc shoes",
+            "etonic",
+            "flower mountain",
+            "hoka",
+            "jason markk",
+            "karhu"
+        ]
+    },
+    "products": [
+        {
+            "id": 1,
+            "brand": "starcow",
+            "name": "skate shoes black",
+            "price": "100.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 2,
+            "brand": "starcow",
+            "name": "skate shoes white",
+            "price": "90.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "clothing",
+            "options": ["L30/W28", "L30/W29", "L30/W30", "L30/W32", "L32/W31", "L32/W32", "L32/W33", "L32/W34", "L32/W36"]
+        },
+        {
+            "id": 3,
+            "brand": "adidas",
+            "name": "ultraboost 21",
+            "price": "180.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 4,
+            "brand": "adidas",
+            "name": "nmd r1",
+            "price": "160.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 5,
+            "brand": "arc'teryx",
+            "name": "a2b shoes",
+            "price": "150.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 6,
+            "brand": "asics",
+            "name": "gel nimbus 22",
+            "price": "170.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 7,
+            "brand": "asics",
+            "name": "gel kayano 27",
+            "price": "160.00",
+            "img": "/assets/images/AsicsFootwear/5.webp",
+            "imgHover": "/assets/images/AsicsFootwear/5_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 8,
+            "brand": "birkenstock",
+            "name": "arizona sandals",
+            "price": "120.00",
+            "img": "/assets/images/AsicsFootwear/6.webp",
+            "imgHover": "/assets/images/AsicsFootwear/6_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 9,
+            "brand": "birkenstock",
+            "name": "gizeh sandals",
+            "price": "110.00",
+            "img": "/assets/images/AsicsFootwear/7.webp",
+            "imgHover": "/assets/images/AsicsFootwear/7_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 10,
+            "brand": "blundstone",
+            "name": "classic 550 boots",
+            "price": "200.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 11,
+            "brand": "blundstone",
+            "name": "wheat boots",
+            "price": "205.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 12,
+            "brand": "blundstone",
+            "name": "steel toe boots",
+            "price": "210.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 13,
+            "brand": "clarks",
+            "name": "desert boot",
+            "price": "130.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 14,
+            "brand": "clarks",
+            "name": "wallabee",
+            "price": "140.00",
+            "img": "/assets/images/AsicsFootwear/5.webp",
+            "imgHover": "/assets/images/AsicsFootwear/5_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 15,
+            "brand": "converse",
+            "name": "chuck taylor all star",
+            "price": "75.00",
+            "img": "/assets/images/AsicsFootwear/6.webp",
+            "imgHover": "/assets/images/AsicsFootwear/6_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 16,
+            "brand": "hoka",
+            "name": "bondi 7",
+            "price": "180.00",
+            "img": "/assets/images/AsicsFootwear/7.webp",
+            "imgHover": "/assets/images/AsicsFootwear/7_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 17,
+            "brand": "hoka",
+            "name": "clifton 7",
+            "price": "160.00",
+            "img": "/assets/images/AsicsFootwear/8.webp",
+            "imgHover": "/assets/images/AsicsFootwear/8_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 18,
+            "brand": "jason markk",
+            "name": "premium shoe cleaner",
+            "price": "20.00",
+            "img": "/assets/images/AsicsFootwear/9.webp",
+            "imgHover": "/assets/images/AsicsFootwear/9_hover.webp",
+            "type": "accessory",
+            "options": []
+        },
+        {
+            "id": 19,
+            "brand": "karhu",
+            "name": "fusion 2.0",
+            "price": "150.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 20,
+            "brand": "karhu",
+            "name": "aria 95",
+            "price": "140.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 21,
+            "brand": "etonic",
+            "name": "jazz shoes",
+            "price": "85.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 22,
+            "brand": "etonic",
+            "name": "running shoes",
+            "price": "95.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 23,
+            "brand": "crocs",
+            "name": "classic clogs",
+            "price": "50.00",
+            "img": "/assets/images/AsicsFootwear/5.webp",
+            "imgHover": "/assets/images/AsicsFootwear/5_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 24,
+            "brand": "crocs",
+            "name": "bistro clogs",
+            "price": "55.00",
+            "img": "/assets/images/AsicsFootwear/6.webp",
+            "imgHover": "/assets/images/AsicsFootwear/6_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 25,
+            "brand": "dc shoes",
+            "name": "revolution shoes",
+            "price": "100.00",
+            "img": "/assets/images/AsicsFootwear/7.webp",
+            "imgHover": "/assets/images/AsicsFootwear/7_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 26,
+            "brand": "dc shoes",
+            "name": "trase shoes",
+            "price": "90.00",
+            "img": "/assets/images/AsicsFootwear/8.webp",
+            "imgHover": "/assets/images/AsicsFootwear/8_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 27,
+            "brand": "patta",
+            "name": "tracksuit",
+            "price": "120.00",
+            "img": "/assets/images/AsicsFootwear/9.webp",
+            "imgHover": "/assets/images/AsicsFootwear/9_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 28,
+            "brand": "patta",
+            "name": "hoodie",
+            "price": "100.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 29,
+            "brand": "starcow",
+            "name": "t-shirt",
+            "price": "45.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 30,
+            "brand": "starcow",
+            "name": "sweatshirt",
+            "price": "65.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 31,
+            "brand": "starcow",
+            "name": "skate shoes black",
+            "price": "100.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 32,
+            "brand": "starcow",
+            "name": "skate shoes white",
+            "price": "90.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "clothing",
+            "options": ["L30/W28", "L30/W29", "L30/W30", "L30/W32", "L32/W31", "L32/W32", "L32/W33", "L32/W34", "L32/W36"]
+        },
+        {
+            "id": 33,
+            "brand": "adidas",
+            "name": "ultraboost 21",
+            "price": "180.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 34,
+            "brand": "adidas",
+            "name": "nmd r1",
+            "price": "160.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 35,
+            "brand": "arc'teryx",
+            "name": "a2b shoes",
+            "price": "150.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 36,
+            "brand": "asics",
+            "name": "gel nimbus 22",
+            "price": "170.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 37,
+            "brand": "asics",
+            "name": "gel kayano 27",
+            "price": "160.00",
+            "img": "/assets/images/AsicsFootwear/5.webp",
+            "imgHover": "/assets/images/AsicsFootwear/5_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 38,
+            "brand": "birkenstock",
+            "name": "arizona sandals",
+            "price": "120.00",
+            "img": "/assets/images/AsicsFootwear/6.webp",
+            "imgHover": "/assets/images/AsicsFootwear/6_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 39,
+            "brand": "birkenstock",
+            "name": "gizeh sandals",
+            "price": "110.00",
+            "img": "/assets/images/AsicsFootwear/7.webp",
+            "imgHover": "/assets/images/AsicsFootwear/7_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 40,
+            "brand": "blundstone",
+            "name": "classic 550 boots",
+            "price": "200.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 41,
+            "brand": "blundstone",
+            "name": "wheat boots",
+            "price": "205.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 42,
+            "brand": "blundstone",
+            "name": "steel toe boots",
+            "price": "210.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 43,
+            "brand": "clarks",
+            "name": "desert boot",
+            "price": "130.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 44,
+            "brand": "clarks",
+            "name": "wallabee",
+            "price": "140.00",
+            "img": "/assets/images/AsicsFootwear/5.webp",
+            "imgHover": "/assets/images/AsicsFootwear/5_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 45,
+            "brand": "converse",
+            "name": "chuck taylor all star",
+            "price": "75.00",
+            "img": "/assets/images/AsicsFootwear/6.webp",
+            "imgHover": "/assets/images/AsicsFootwear/6_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 46,
+            "brand": "hoka",
+            "name": "bondi 7",
+            "price": "180.00",
+            "img": "/assets/images/AsicsFootwear/7.webp",
+            "imgHover": "/assets/images/AsicsFootwear/7_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 47,
+            "brand": "hoka",
+            "name": "clifton 7",
+            "price": "160.00",
+            "img": "/assets/images/AsicsFootwear/8.webp",
+            "imgHover": "/assets/images/AsicsFootwear/8_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 48,
+            "brand": "jason markk",
+            "name": "premium shoe cleaner",
+            "price": "20.00",
+            "img": "/assets/images/AsicsFootwear/9.webp",
+            "imgHover": "/assets/images/AsicsFootwear/9_hover.webp",
+            "type": "accessory",
+            "options": []
+        },
+        {
+            "id": 49,
+            "brand": "karhu",
+            "name": "fusion 2.0",
+            "price": "150.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 50,
+            "brand": "karhu",
+            "name": "aria 95",
+            "price": "140.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 51,
+            "brand": "etonic",
+            "name": "jazz shoes",
+            "price": "85.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 52,
+            "brand": "etonic",
+            "name": "running shoes",
+            "price": "95.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 53,
+            "brand": "crocs",
+            "name": "classic clogs",
+            "price": "50.00",
+            "img": "/assets/images/AsicsFootwear/5.webp",
+            "imgHover": "/assets/images/AsicsFootwear/5_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 54,
+            "brand": "crocs",
+            "name": "bistro clogs",
+            "price": "55.00",
+            "img": "/assets/images/AsicsFootwear/6.webp",
+            "imgHover": "/assets/images/AsicsFootwear/6_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 55,
+            "brand": "dc shoes",
+            "name": "revolution shoes",
+            "price": "100.00",
+            "img": "/assets/images/AsicsFootwear/7.webp",
+            "imgHover": "/assets/images/AsicsFootwear/7_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 56,
+            "brand": "dc shoes",
+            "name": "trase shoes",
+            "price": "90.00",
+            "img": "/assets/images/AsicsFootwear/8.webp",
+            "imgHover": "/assets/images/AsicsFootwear/8_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 57,
+            "brand": "patta",
+            "name": "tracksuit",
+            "price": "120.00",
+            "img": "/assets/images/AsicsFootwear/9.webp",
+            "imgHover": "/assets/images/AsicsFootwear/9_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 58,
+            "brand": "patta",
+            "name": "hoodie",
+            "price": "100.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 59,
+            "brand": "starcow",
+            "name": "t-shirt",
+            "price": "45.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 60,
+            "brand": "starcow",
+            "name": "sweatshirt",
+            "price": "65.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 71,
+            "brand": "starcow",
+            "name": "skate shoes black",
+            "price": "100.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 72,
+            "brand": "starcow",
+            "name": "skate shoes white",
+            "price": "90.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "clothing",
+            "options": ["L30/W28", "L30/W29", "L30/W30", "L30/W32", "L32/W31", "L32/W32", "L32/W33", "L32/W34", "L32/W36"]
+        },
+        {
+            "id": 73,
+            "brand": "adidas",
+            "name": "ultraboost 21",
+            "price": "180.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 74,
+            "brand": "adidas",
+            "name": "nmd r1",
+            "price": "160.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 75,
+            "brand": "arc'teryx",
+            "name": "a2b shoes",
+            "price": "150.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 76,
+            "brand": "asics",
+            "name": "gel nimbus 22",
+            "price": "170.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 77,
+            "brand": "asics",
+            "name": "gel kayano 27",
+            "price": "160.00",
+            "img": "/assets/images/AsicsFootwear/5.webp",
+            "imgHover": "/assets/images/AsicsFootwear/5_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 78,
+            "brand": "birkenstock",
+            "name": "arizona sandals",
+            "price": "120.00",
+            "img": "/assets/images/AsicsFootwear/6.webp",
+            "imgHover": "/assets/images/AsicsFootwear/6_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 79,
+            "brand": "birkenstock",
+            "name": "gizeh sandals",
+            "price": "110.00",
+            "img": "/assets/images/AsicsFootwear/7.webp",
+            "imgHover": "/assets/images/AsicsFootwear/7_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 80,
+            "brand": "blundstone",
+            "name": "classic 550 boots",
+            "price": "200.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 81,
+            "brand": "blundstone",
+            "name": "wheat boots",
+            "price": "205.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 82,
+            "brand": "blundstone",
+            "name": "steel toe boots",
+            "price": "210.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 83,
+            "brand": "clarks",
+            "name": "desert boot",
+            "price": "130.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 84,
+            "brand": "clarks",
+            "name": "wallabee",
+            "price": "140.00",
+            "img": "/assets/images/AsicsFootwear/5.webp",
+            "imgHover": "/assets/images/AsicsFootwear/5_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 85,
+            "brand": "converse",
+            "name": "chuck taylor all star",
+            "price": "75.00",
+            "img": "/assets/images/AsicsFootwear/6.webp",
+            "imgHover": "/assets/images/AsicsFootwear/6_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 86,
+            "brand": "hoka",
+            "name": "bondi 7",
+            "price": "180.00",
+            "img": "/assets/images/AsicsFootwear/7.webp",
+            "imgHover": "/assets/images/AsicsFootwear/7_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 87,
+            "brand": "hoka",
+            "name": "clifton 7",
+            "price": "160.00",
+            "img": "/assets/images/AsicsFootwear/8.webp",
+            "imgHover": "/assets/images/AsicsFootwear/8_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 88,
+            "brand": "jason markk",
+            "name": "premium shoe cleaner",
+            "price": "20.00",
+            "img": "/assets/images/AsicsFootwear/9.webp",
+            "imgHover": "/assets/images/AsicsFootwear/9_hover.webp",
+            "type": "accessory",
+            "options": []
+        },
+        {
+            "id": 89,
+            "brand": "karhu",
+            "name": "fusion 2.0",
+            "price": "150.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 90,
+            "brand": "karhu",
+            "name": "aria 95",
+            "price": "140.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 91,
+            "brand": "etonic",
+            "name": "jazz shoes",
+            "price": "85.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 92,
+            "brand": "etonic",
+            "name": "running shoes",
+            "price": "95.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 93,
+            "brand": "crocs",
+            "name": "classic clogs",
+            "price": "50.00",
+            "img": "/assets/images/AsicsFootwear/5.webp",
+            "imgHover": "/assets/images/AsicsFootwear/5_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 94,
+            "brand": "crocs",
+            "name": "bistro clogs",
+            "price": "55.00",
+            "img": "/assets/images/AsicsFootwear/6.webp",
+            "imgHover": "/assets/images/AsicsFootwear/6_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 95,
+            "brand": "dc shoes",
+            "name": "revolution shoes",
+            "price": "100.00",
+            "img": "/assets/images/AsicsFootwear/7.webp",
+            "imgHover": "/assets/images/AsicsFootwear/7_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 96,
+            "brand": "dc shoes",
+            "name": "trase shoes",
+            "price": "90.00",
+            "img": "/assets/images/AsicsFootwear/8.webp",
+            "imgHover": "/assets/images/AsicsFootwear/8_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 97,
+            "brand": "patta",
+            "name": "tracksuit",
+            "price": "120.00",
+            "img": "/assets/images/AsicsFootwear/9.webp",
+            "imgHover": "/assets/images/AsicsFootwear/9_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 98,
+            "brand": "patta",
+            "name": "hoodie",
+            "price": "100.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 99,
+            "brand": "starcow",
+            "name": "t-shirt",
+            "price": "45.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 100,
+            "brand": "starcow",
+            "name": "sweatshirt",
+            "price": "65.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 101,
+            "brand": "starcow",
+            "name": "skate shoes black",
+            "price": "100.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 102,
+            "brand": "starcow",
+            "name": "skate shoes white",
+            "price": "90.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "clothing",
+            "options": ["L30/W28", "L30/W29", "L30/W30", "L30/W32", "L32/W31", "L32/W32", "L32/W33", "L32/W34", "L32/W36"]
+        },
+        {
+            "id": 103,
+            "brand": "adidas",
+            "name": "ultraboost 21",
+            "price": "180.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 104,
+            "brand": "adidas",
+            "name": "nmd r1",
+            "price": "160.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 105,
+            "brand": "arc'teryx",
+            "name": "a2b shoes",
+            "price": "150.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 106,
+            "brand": "asics",
+            "name": "gel nimbus 22",
+            "price": "170.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 107,
+            "brand": "asics",
+            "name": "gel kayano 27",
+            "price": "160.00",
+            "img": "/assets/images/AsicsFootwear/5.webp",
+            "imgHover": "/assets/images/AsicsFootwear/5_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 108,
+            "brand": "birkenstock",
+            "name": "arizona sandals",
+            "price": "120.00",
+            "img": "/assets/images/AsicsFootwear/6.webp",
+            "imgHover": "/assets/images/AsicsFootwear/6_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 109,
+            "brand": "birkenstock",
+            "name": "gizeh sandals",
+            "price": "110.00",
+            "img": "/assets/images/AsicsFootwear/7.webp",
+            "imgHover": "/assets/images/AsicsFootwear/7_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 110,
+            "brand": "blundstone",
+            "name": "classic 550 boots",
+            "price": "200.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 111,
+            "brand": "blundstone",
+            "name": "wheat boots",
+            "price": "205.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 112,
+            "brand": "blundstone",
+            "name": "steel toe boots",
+            "price": "210.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 113,
+            "brand": "clarks",
+            "name": "desert boot",
+            "price": "130.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 114,
+            "brand": "clarks",
+            "name": "wallabee",
+            "price": "140.00",
+            "img": "/assets/images/AsicsFootwear/5.webp",
+            "imgHover": "/assets/images/AsicsFootwear/5_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 115,
+            "brand": "converse",
+            "name": "chuck taylor all star",
+            "price": "75.00",
+            "img": "/assets/images/AsicsFootwear/6.webp",
+            "imgHover": "/assets/images/AsicsFootwear/6_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 116,
+            "brand": "hoka",
+            "name": "bondi 7",
+            "price": "180.00",
+            "img": "/assets/images/AsicsFootwear/7.webp",
+            "imgHover": "/assets/images/AsicsFootwear/7_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 117,
+            "brand": "hoka",
+            "name": "clifton 7",
+            "price": "160.00",
+            "img": "/assets/images/AsicsFootwear/8.webp",
+            "imgHover": "/assets/images/AsicsFootwear/8_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 118,
+            "brand": "jason markk",
+            "name": "premium shoe cleaner",
+            "price": "20.00",
+            "img": "/assets/images/AsicsFootwear/9.webp",
+            "imgHover": "/assets/images/AsicsFootwear/9_hover.webp",
+            "type": "accessory",
+            "options": []
+        },
+        {
+            "id": 119,
+            "brand": "karhu",
+            "name": "fusion 2.0",
+            "price": "150.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 120,
+            "brand": "karhu",
+            "name": "aria 95",
+            "price": "140.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 121,
+            "brand": "etonic",
+            "name": "jazz shoes",
+            "price": "85.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 122,
+            "brand": "etonic",
+            "name": "running shoes",
+            "price": "95.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 123,
+            "brand": "crocs",
+            "name": "classic clogs",
+            "price": "50.00",
+            "img": "/assets/images/AsicsFootwear/5.webp",
+            "imgHover": "/assets/images/AsicsFootwear/5_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 124,
+            "brand": "crocs",
+            "name": "bistro clogs",
+            "price": "55.00",
+            "img": "/assets/images/AsicsFootwear/6.webp",
+            "imgHover": "/assets/images/AsicsFootwear/6_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 125,
+            "brand": "dc shoes",
+            "name": "revolution shoes",
+            "price": "100.00",
+            "img": "/assets/images/AsicsFootwear/7.webp",
+            "imgHover": "/assets/images/AsicsFootwear/7_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 126,
+            "brand": "dc shoes",
+            "name": "trase shoes",
+            "price": "90.00",
+            "img": "/assets/images/AsicsFootwear/8.webp",
+            "imgHover": "/assets/images/AsicsFootwear/8_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 127,
+            "brand": "patta",
+            "name": "tracksuit",
+            "price": "120.00",
+            "img": "/assets/images/AsicsFootwear/9.webp",
+            "imgHover": "/assets/images/AsicsFootwear/9_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 128,
+            "brand": "patta",
+            "name": "hoodie",
+            "price": "100.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 129,
+            "brand": "starcow",
+            "name": "t-shirt",
+            "price": "45.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 130,
+            "brand": "starcow",
+            "name": "sweatshirt",
+            "price": "65.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 31,
+            "brand": "starcow",
+            "name": "skate shoes black",
+            "price": "100.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 132,
+            "brand": "starcow",
+            "name": "skate shoes white",
+            "price": "90.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "clothing",
+            "options": ["L30/W28", "L30/W29", "L30/W30", "L30/W32", "L32/W31", "L32/W32", "L32/W33", "L32/W34", "L32/W36"]
+        },
+        {
+            "id": 133,
+            "brand": "adidas",
+            "name": "ultraboost 21",
+            "price": "180.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 134,
+            "brand": "adidas",
+            "name": "nmd r1",
+            "price": "160.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 135,
+            "brand": "arc'teryx",
+            "name": "a2b shoes",
+            "price": "150.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 136,
+            "brand": "asics",
+            "name": "gel nimbus 22",
+            "price": "170.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 137,
+            "brand": "asics",
+            "name": "gel kayano 27",
+            "price": "160.00",
+            "img": "/assets/images/AsicsFootwear/5.webp",
+            "imgHover": "/assets/images/AsicsFootwear/5_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 138,
+            "brand": "birkenstock",
+            "name": "arizona sandals",
+            "price": "120.00",
+            "img": "/assets/images/AsicsFootwear/6.webp",
+            "imgHover": "/assets/images/AsicsFootwear/6_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 139,
+            "brand": "birkenstock",
+            "name": "gizeh sandals",
+            "price": "110.00",
+            "img": "/assets/images/AsicsFootwear/7.webp",
+            "imgHover": "/assets/images/AsicsFootwear/7_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 140,
+            "brand": "blundstone",
+            "name": "classic 550 boots",
+            "price": "200.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 141,
+            "brand": "blundstone",
+            "name": "wheat boots",
+            "price": "205.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 142,
+            "brand": "blundstone",
+            "name": "steel toe boots",
+            "price": "210.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 143,
+            "brand": "clarks",
+            "name": "desert boot",
+            "price": "130.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 144,
+            "brand": "clarks",
+            "name": "wallabee",
+            "price": "140.00",
+            "img": "/assets/images/AsicsFootwear/5.webp",
+            "imgHover": "/assets/images/AsicsFootwear/5_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 145,
+            "brand": "converse",
+            "name": "chuck taylor all star",
+            "price": "75.00",
+            "img": "/assets/images/AsicsFootwear/6.webp",
+            "imgHover": "/assets/images/AsicsFootwear/6_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 146,
+            "brand": "hoka",
+            "name": "bondi 7",
+            "price": "180.00",
+            "img": "/assets/images/AsicsFootwear/7.webp",
+            "imgHover": "/assets/images/AsicsFootwear/7_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 147,
+            "brand": "hoka",
+            "name": "clifton 7",
+            "price": "160.00",
+            "img": "/assets/images/AsicsFootwear/8.webp",
+            "imgHover": "/assets/images/AsicsFootwear/8_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 148,
+            "brand": "jason markk",
+            "name": "premium shoe cleaner",
+            "price": "20.00",
+            "img": "/assets/images/AsicsFootwear/9.webp",
+            "imgHover": "/assets/images/AsicsFootwear/9_hover.webp",
+            "type": "accessory",
+            "options": []
+        },
+        {
+            "id": 149,
+            "brand": "karhu",
+            "name": "fusion 2.0",
+            "price": "150.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 150,
+            "brand": "karhu",
+            "name": "aria 95",
+            "price": "140.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 151,
+            "brand": "etonic",
+            "name": "jazz shoes",
+            "price": "85.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 152,
+            "brand": "etonic",
+            "name": "running shoes",
+            "price": "95.00",
+            "img": "/assets/images/AsicsFootwear/4.webp",
+            "imgHover": "/assets/images/AsicsFootwear/4_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 153,
+            "brand": "crocs",
+            "name": "classic clogs",
+            "price": "50.00",
+            "img": "/assets/images/AsicsFootwear/5.webp",
+            "imgHover": "/assets/images/AsicsFootwear/5_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 154,
+            "brand": "crocs",
+            "name": "bistro clogs",
+            "price": "55.00",
+            "img": "/assets/images/AsicsFootwear/6.webp",
+            "imgHover": "/assets/images/AsicsFootwear/6_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 155,
+            "brand": "dc shoes",
+            "name": "revolution shoes",
+            "price": "100.00",
+            "img": "/assets/images/AsicsFootwear/7.webp",
+            "imgHover": "/assets/images/AsicsFootwear/7_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 156,
+            "brand": "dc shoes",
+            "name": "trase shoes",
+            "price": "90.00",
+            "img": "/assets/images/AsicsFootwear/8.webp",
+            "imgHover": "/assets/images/AsicsFootwear/8_hover.webp",
+            "type": "footwear",
+            "options": ["37", "37.5", "38", "39", "39.5", "40", "40.5", "41", "42", "42.5", "43.5", "44", "44.5", "45", "46"]
+        },
+        {
+            "id": 157,
+            "brand": "patta",
+            "name": "tracksuit",
+            "price": "120.00",
+            "img": "/assets/images/AsicsFootwear/9.webp",
+            "imgHover": "/assets/images/AsicsFootwear/9_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 158,
+            "brand": "patta",
+            "name": "hoodie",
+            "price": "100.00",
+            "img": "/assets/images/AsicsFootwear/1.webp",
+            "imgHover": "/assets/images/AsicsFootwear/1_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 159,
+            "brand": "starcow",
+            "name": "t-shirt",
+            "price": "45.00",
+            "img": "/assets/images/AsicsFootwear/2.webp",
+            "imgHover": "/assets/images/AsicsFootwear/2_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": 160,
+            "brand": "starcow",
+            "name": "sweatshirt",
+            "price": "65.00",
+            "img": "/assets/images/AsicsFootwear/3.webp",
+            "imgHover": "/assets/images/AsicsFootwear/3_hover.webp",
+            "type": "clothing",
+            "options": ["S", "M", "L", "XL"]
+        }
+    ]
+}
