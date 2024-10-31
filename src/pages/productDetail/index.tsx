@@ -9,13 +9,13 @@ import Contact from "@/components/shared/Contact";
 import useCartStore from '@/stores/stores';
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { useParams } from "react-router-dom";
-import { useFetchProducts } from "@/api/query/products";
+import { useFetchProductById } from "@/api/query/products";
 import { useState } from "react";
 
 function ProductDetail() {
     const productId = Number(useParams().productId);
     const addItemToCart = useCartStore(state => state.addItem);
-    const { data, isLoading, error } = useFetchProducts('', '', null, null, productId);
+    const { data, isLoading, error } = useFetchProductById(productId);
     const [selectedOption, setSelectedOption] = useState<string | null>(null);
     if (isLoading) return <div>Loading...</div>;
     if (error) return <div>Error loading product.</div>;

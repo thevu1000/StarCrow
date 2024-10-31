@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { SheetTitle } from "@/components/ui/sheet";
 import useCartStore from '@/stores/stores';
-import { useFetchProducts } from '@/api/query/products';
+import { useFetchRandomProducts } from '@/api/query/products';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
 function CartContent() {
     const items = useCartStore(state => state.items);
-    const { data, error, isLoading } = useFetchProducts('', '', null, null, null, true);
+    const { data, error, isLoading } = useFetchRandomProducts();
     console.log(data);
 
     const removeItem = useCartStore(state => state.removeItem);

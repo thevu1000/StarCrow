@@ -14,20 +14,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-
-interface Product {
-    id: number;
-    name: string;
-    img: string;
-    imgHover: string;
-    description: string;
-    price: string;
-}
-
-interface FilterOption {
-    name: string;
-    options?: string[];
-}
+import { Product, FilterOption } from "@/types/type";
 
 interface ItemListProps {
     filter: FilterOption[];
@@ -40,13 +27,13 @@ interface ItemListProps {
 
 function ItemList({ filter, footwearItems, brandName, type, url, total }: ItemListProps) {
     const [openAccordionIndex, setOpenAccordionIndex] = useState<number | null>(null);
-    
+
     const handleAccordionToggle = (index: number) => {
         setOpenAccordionIndex(prevIndex => (prevIndex === index ? null : index));
     };
 
     const itemQuantity = footwearItems.length;
-    
+
     const isOutlet = url === '/collections/outlet';
     let displayName = isOutlet ? 'Outlet' : ` ${brandName} ${type}`;
     if (isOutlet) {
@@ -56,6 +43,7 @@ function ItemList({ filter, footwearItems, brandName, type, url, total }: ItemLi
     } else {
         displayName = `${brandName} ${type}`;
     }
+    
     return (
         <div className="container mx-auto">
             <div className="flex justify-between flex-col lg:flex-row">

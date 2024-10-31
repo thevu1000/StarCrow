@@ -4,60 +4,62 @@ import Contact from "../../components/shared/Contact";
 import ItemList from "./components/ItemList";
 import Pagination from "../../components/shared/Pagination";
 import { useLocation, useParams } from "react-router-dom";
-import { useFetchProducts } from "@/api/query/products";
+import { useFetchProductsByBrandAndType, useFetchTotalProductsByBrand } from "@/api/query/products";
 import { usePaginationStore } from "@/stores/stores";
+import { Product, FilterOption } from "@/types/type";
 
 function Collection() {
   const { collectionId } = useParams();
   const location = useLocation();
   const currentPage = usePaginationStore((state) => state.currentPage);
   const setCurrentPage = usePaginationStore((state) => state.setCurrentPage);
-
-  // Extract page number from query parameters
+  
   const queryParams = new URLSearchParams(location.search);
-  const pageFromUrl = parseInt(queryParams.get("page")) || 1; // Default to 1 if not present
+  const pageFromUrl = parseInt(queryParams.get("page") || "1");
 
   useEffect(() => {
-    // Set current page from URL when component mounts
     setCurrentPage(pageFromUrl);
   }, [pageFromUrl, setCurrentPage]);
 
   if (!collectionId) {
     console.error("No collectionId provided");
-    return null; // Return null instead of undefined
+    return null;
   }
 
-  let [firstPart, secondPart] = collectionId.split("-");
+  let firstPart: string = '';
+  let secondPart: string = '';
+
+  [firstPart, secondPart] = collectionId.split("-").map(part => part || '');
+
+  if (secondPart === "outlet") {
+    firstPart = '';
+    secondPart = '';
+  }
 
   if (!secondPart) {
     secondPart = firstPart;
-    firstPart = undefined;
+    firstPart = '';
   }
 
-  if (secondPart === "outlet") {
-    firstPart = undefined;
-    secondPart = undefined;
-  }
+  const { data: totalItemsData, isLoading: isLoadingTotal } = useFetchTotalProductsByBrand(firstPart);
 
-  let totalItem;
-  if (secondPart === "footwear") {
-    totalItem = 118;
-  } else if (secondPart === "clothing") {
-    totalItem = 23;
-  }
-
-  const { data, isLoading } = useFetchProducts(
+  const { data: productsData, isLoading: isLoadingProducts } = useFetchProductsByBrandAndType(
     firstPart,
     secondPart,
-    null,
-    null,
-    null,
-    false,
     currentPage,
     12
   );
 
-  const filter = [
+  const totalItems = totalItemsData || 0;
+
+  const itemsPerPage = 12;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  if (isLoadingTotal || isLoadingProducts) {
+    return <div>Loading...</div>;
+  }
+
+  const filter: FilterOption[] = [
     {
       name: "Sort by",
       type: "radio",
@@ -101,26 +103,23 @@ function Collection() {
     },
     {
       name: "Price",
-      type: null,
+      type: 'range',
     },
   ];
 
-  const footwearItems = !isLoading && data;
+  const footwearItems: Product[] = productsData || [];
+
   return (
     <Layout>
-      {isLoading ? (
-        <div>Loading...</div>
-      ) : (
-        <ItemList
-          filter={filter}
-          url={location.pathname}
-          brandName={firstPart}
-          type={secondPart}
-          footwearItems={footwearItems}
-          total={totalItem}
-        />
-      )}
-      <Pagination total={totalItem} itemsPerPage={12} />
+      <ItemList
+        filter={filter}
+        url={location.pathname}
+        brandName={firstPart}
+        type={secondPart}
+        footwearItems={footwearItems}
+        total={totalItems}
+      />
+      <Pagination total={totalPages} itemsPerPage={itemsPerPage} /> 
       <Contact />
     </Layout>
   );

@@ -1,19 +1,11 @@
 import ProductItem from '@/components/shared/ProductItem/index';
-import { useFetchProducts } from '@/api/query/products';
+import { useFetchProductsByIdRange } from '@/api/query/products';
+import { Product } from "@/types/type";
 
-interface Product {
-    id: number;
-    img: string;
-    imgHover: string;
-    name: string;
-    description: string;
-    price: string;
-    brand: string;
-    options: [];
-}
+
 
 function TeamSelection() {
-    const { data, isLoading } = useFetchProducts('', '', 15, 18);
+    const { data, isLoading } = useFetchProductsByIdRange(15, 18);
     const products: Product[] = data || [];
 
     return (

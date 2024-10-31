@@ -14,14 +14,15 @@ import CollectionSheetFootWear from './Components/CollectionSheetFootWear';
 import CollectionSheetClothing from './Components/CollectionSheetClothing';
 
 const Header = () => {
-  const [showHeader, setShowHeader] = useState(false);
-  const [showSearch, setShowSearch] = useState(false);
+  const [showHeader, setShowHeader] = useState<boolean>(false);
+  const [showSearch, setShowSearch] = useState<boolean>(false);
   const cartItems = useCartStore(state => state.items);
-  const [showCart, setShowCart] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
-  const [activeMenuItem, setActiveMenuItem] = useState(null);
-  const [selectedLanguage, setSelectedLanguage] = useState('en');
-  const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+  const [showCart, setShowCart] = useState<boolean>(false);
+  const [showMenu, setShowMenu] = useState<boolean>(false);
+  const [activeMenuItem, setActiveMenuItem] = useState<string | null>(null);
+  const [selectedLanguage, setSelectedLanguage] = useState<string>('en');
+  const totalItems = cartItems.reduce((acc: number, item: { quantity: number }) => acc + item.quantity, 0);
+
   useEffect(() => {
     const handleScroll = () => {
       setShowHeader(window.scrollY > 30);
@@ -86,7 +87,7 @@ const Header = () => {
       title: 'outlet',
       link: '/collections/outlet',
       isActive: false,
-      sheet: false
+      sheet: false,
     },
     {
       title: 'new in',
@@ -110,7 +111,7 @@ const Header = () => {
       title: 'launches',
       link: '/launches',
       isActive: false,
-      sheet: false
+      sheet: false,
     },
   ];
 
@@ -189,9 +190,9 @@ const Header = () => {
                               </li>
                             </SheetTrigger>
                             {item.title === "footwear" ? (
-                              <CollectionSheetFootWear a={item.title} />
+                              <CollectionSheetFootWear />
                             ) : (
-                              <CollectionSheetClothing a={item.title} />
+                              <CollectionSheetClothing />
                             )}
                           </Sheet>
                         ) : (
@@ -308,9 +309,9 @@ const Header = () => {
                     </li>
                   </SheetTrigger>
                   {item.title === "footwear" ? (
-                    <CollectionSheetFootWear a={item.title} />
+                    <CollectionSheetFootWear />
                   ) : (
-                    <CollectionSheetClothing a={item.title} />
+                    <CollectionSheetClothing />
                   )}
                 </Sheet>
               ) : (

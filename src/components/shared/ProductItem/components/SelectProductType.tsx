@@ -5,11 +5,6 @@ import { Link } from "react-router-dom";
 import useCartStore from '@/stores/stores';
 import { useToast } from "@/hooks/use-toast"
 
-type ProductType = {
-    name: string;
-    img: string;
-};
-
 type Product = {
     img: string;
     imgHover: string;
@@ -36,7 +31,7 @@ function SelectProductType({ product }: { product: Product }) {
         }
         const itemToAdd = {
             ...product,
-            options: [selectedSize],
+            options: [String(selectedSize)],
         };
         addItemToCart(itemToAdd);
     
