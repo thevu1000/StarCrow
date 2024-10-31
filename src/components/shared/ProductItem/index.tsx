@@ -29,7 +29,7 @@ const ProductCard = ({ product, fontSize }: ProductCardProps) => {
 
         <div className="mx-auto w-full bg-white rounded-lg shadow-sm overflow-hidden relative group">
             <img className="w-full object-cover" src={img} alt={product.brand}/>
-            <Link to={`/products/1`}>
+            <Link to={`/products/${product.id}`}>
                 <div className="p-4 relative z-10 bg-white">
                     <h2 className="text-[14px] font-black text-gray-800 uppercase">{product.brand}</h2>
                     <p className="text-md text-gray-600 uppercase">{product.name}</p>
