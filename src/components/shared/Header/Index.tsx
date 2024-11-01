@@ -276,7 +276,7 @@ const Header = () => {
       <header className="hidden lg:grid container mx-auto grid grid-cols-2 py-[20px] bg-white">
         <div>
           <Link to="/">
-            <LogoLight height={'full'} />
+            <LogoLight className='xl:h-full lg:h-[60px] h-[30px]' />
           </Link>
         </div>
 
@@ -299,7 +299,7 @@ const Header = () => {
             ))}
           </ul>
 
-          <ul className="uppercase flex gap-[20px] font-prompt font-black text-[23px]">
+          <ul className="uppercase flex gap-[20px] font-prompt font-black text-[15px] xl:text-[19px] 2xl:text-[23px]">
             {menuB.map((item, index) => (
               item.sheet ? (
                 <Sheet key={index}>
