@@ -15,6 +15,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Product, FilterOption } from "@/types/type";
+import { useParams } from "react-router-dom";
 
 interface ItemListProps {
     filter: FilterOption[];
@@ -26,13 +27,13 @@ interface ItemListProps {
 }
 
 function ItemList({ filter, footwearItems, brandName, type, url, total }: ItemListProps) {
+    const params = useParams();
+    
     const [openAccordionIndex, setOpenAccordionIndex] = useState<number | null>(null);
 
     const handleAccordionToggle = (index: number) => {
         setOpenAccordionIndex(prevIndex => (prevIndex === index ? null : index));
     };
-
-    const itemQuantity = footwearItems.length;
 
     const isOutlet = url === '/collections/outlet';
     let displayName = isOutlet ? 'Outlet' : ` ${brandName} ${type}`;
@@ -50,6 +51,7 @@ function ItemList({ filter, footwearItems, brandName, type, url, total }: ItemLi
                 <div>
                     <h1 className="uppercase font-black font-prompt lg:text-[40px] text-[26px] w-fit flex gap-[10px]">
                         {displayName}
+                        <p className="text-gray-500 text-[20px] font-black font-prompt lg:static bottom-0 right-0">{total}</p>
                     </h1>
                 </div>
 

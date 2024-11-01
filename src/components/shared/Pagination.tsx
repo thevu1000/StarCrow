@@ -10,8 +10,6 @@ interface PaginationProps {
 function Pagination({ total, itemsPerPage }: PaginationProps) {
     const { currentPage, setCurrentPage } = usePaginationStore();
     const pagesArray = new Array(total).fill(0);
-    console.log(pagesArray);
-    
 
     return (
         <div className="flex items-center space-x-4 font-prompt font-black container mx-auto justify-center relative">

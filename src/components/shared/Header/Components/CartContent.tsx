@@ -3,11 +3,11 @@ import { SheetTitle } from "@/components/ui/sheet";
 import useCartStore from '@/stores/stores';
 import { useFetchRandomProducts } from '@/api/query/products';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { Link } from 'react-router-dom';
 
 function CartContent() {
     const items = useCartStore(state => state.items);
     const { data, error, isLoading } = useFetchRandomProducts();
-    console.log(data);
 
     const removeItem = useCartStore(state => state.removeItem);
 
@@ -88,7 +88,8 @@ function CartContent() {
                     <div className="mt-4">
                         {
                             !isLoading && data && data.map((product: any, index:any) => (
-                                <div key={index} className="flex items-center mb-6">
+                                <Link to={`/products/${product.id}`}>
+                                    <div key={index} className="flex items-center mb-6">
                                     <img src={product.img} alt={product.name} className="w-24 h-24 object-cover mr-4" />
                                     <div>
                                         <h2 className="font-bold text-sm uppercase">{product.brand}</h2>
@@ -96,6 +97,7 @@ function CartContent() {
                                         <p className="text-lg font-bold uppercase">{product.price} €</p>
                                     </div>
                                 </div>
+                                </Link>
                             ))
                         }
                     </div>
