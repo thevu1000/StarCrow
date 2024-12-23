@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Layout from "@/components/layout/_root/Layout";
 import Contact from "../../components/shared/Contact";
 import ItemList from "./components/ItemList";
@@ -118,7 +118,7 @@ function Collection() {
         footwearItems={footwearItems}
         total={totalItems}
       />
-      <Pagination total={totalPages} itemsPerPage={itemsPerPage} /> 
+      <Pagination total={totalPages} /> 
       <Contact />
     </Layout>
   );

@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 
 interface PaginationProps {
     total: number;
-    itemsPerPage: number;
 }
 
-function Pagination({ total, itemsPerPage }: PaginationProps) {
+function Pagination({ total }: PaginationProps) {
     const { currentPage, setCurrentPage } = usePaginationStore();
     const pagesArray = new Array(total).fill(0);
 
@@ -22,7 +21,7 @@ function Pagination({ total, itemsPerPage }: PaginationProps) {
                 <Chevron className="h-[15px] rotate-[-270deg] text-white" />
             </Link>
             <div className="flex gap-8">
-                {pagesArray.map((item,index) => (
+                {pagesArray.map((index) => (
                     <Link
                         key={index}
                         className={`text-[30px] ${currentPage === index + 1 ? 'text-gray-500 font-bold' : 'text-gray-400'} cursor-pointer`}

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { SheetTitle } from "@/components/ui/sheet";
 import useCartStore from '@/stores/stores';
 import { useFetchRandomProducts } from '@/api/query/products';
@@ -7,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 function CartContent() {
     const items = useCartStore(state => state.items);
-    const { data, error, isLoading } = useFetchRandomProducts();
+    const { data, isLoading } = useFetchRandomProducts();
 
     const removeItem = useCartStore(state => state.removeItem);
 

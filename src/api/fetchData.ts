@@ -60,7 +60,13 @@ export const fetchProductById = async (id: number) => {
         throw new Error('Network response was not ok');
     }
 
-    return response.json();
+    const products = await response.json();
+
+    if (Array.isArray(products) && products.length > 0) {
+        return products[0];
+    }
+
+    return products;
 };
 
 export const fetchAllProductByBrandAndType = async (brand: string, type: string): Promise<number> => {

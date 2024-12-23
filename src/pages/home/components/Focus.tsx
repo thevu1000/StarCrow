@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import {focusImgs} from '@/assets/images';
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 import { Link } from 'react-router-dom';

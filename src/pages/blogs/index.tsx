@@ -5,7 +5,7 @@ import FirstBlogItem from "./components/FirstBlogItem";
 import BlogItem from "./components/BlogItem";
 
 function Blogs() {
-    const blogItems = Array.from({ length: 12 }, (_, index) => ({
+    const blogItems = Array.from({ length: 12 }, (_) => ({
         title: "NOCTA OPAL COLLECTION",
         subtitle: "NIKE x NOCTA",
         date: "22.10.2024",
@@ -33,7 +33,7 @@ function Blogs() {
                     ))}
                 </div>
             </div>
-            <Pagination/>
+            <Pagination total={2}/>
             <Contact/>
         </Layout>
     );

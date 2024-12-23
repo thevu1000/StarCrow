@@ -17,8 +17,7 @@ const MenuBar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleShowSearch = () => setShowSearch((prev) => !prev);
-  const handleShowMenu = () => setShowMenu((prev) => !prev);
+  const handleShowSearch = () => setShowSearch(!showSearch);
 
   return (
     <div className={`menubar py-[20px] fixed bg-white z-30 w-full transition-all duration-500 linear ${showHeader ? 'top-0' : 'top-[-100%]'}`}>

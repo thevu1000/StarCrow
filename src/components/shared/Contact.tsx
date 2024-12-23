@@ -5,7 +5,7 @@ function Contact() {
                 <div className="lg:w-[40%]">
                     <h1 className="lg:text-6xl text-[26px] font-black leading-none">RESTEZ INFORMÉS !</h1>
                     <div className="mt-8">
-                        <form className="flex items-center border border-gray-300 p-2 font-prompt font-black">
+                        <form className="flex items-center justify-around border border-gray-300 p-2 font-prompt font-black">
                             <input required type="email" placeholder="YOUR EMAIL" className="lg:flex-1 w-[70%] p-2 text-gray-500 focus:outline-none" />
                             <button type="submit" className="bg-white text-black lg:p-2 font-prompt font-black">CONFIRM</button>
                         </form>

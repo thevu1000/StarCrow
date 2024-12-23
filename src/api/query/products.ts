@@ -15,7 +15,7 @@ export const useFetchProductById = (productId: number): UseQueryResult<Product, 
     return useQuery({
         queryKey: ['product', productId],
         queryFn: () => fetchProductById(productId),
-        placeholderData: keepPreviousData,
+        placeholderData: undefined,
         refetchOnMount: false,
         refetchOnWindowFocus: false,
         staleTime: 1000 * 60 * 5,

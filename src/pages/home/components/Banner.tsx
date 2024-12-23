@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface BannerProps {
     image: string;
     title: string;

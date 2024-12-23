@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; // Nhập Link từ react-router-dom
+import { Link } from 'react-router-dom';
 import { Sheet, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import SelectProductType from '@/components/shared/ProductItem/components/SelectProductType';
 

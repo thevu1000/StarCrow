@@ -11,17 +11,19 @@ import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carouse
 import { useParams } from "react-router-dom";
 import { useFetchProductById } from "@/api/query/products";
 import { useState } from "react";
+import { useToast } from "@/hooks/use-toast"
+
 
 function ProductDetail() {
     const productId = Number(useParams().productId);
     const addItemToCart = useCartStore(state => state.addItem);
     const { data, isLoading, error } = useFetchProductById(productId);
     const [selectedOption, setSelectedOption] = useState<string | null>(null);
+    const { toast } = useToast()
     if (isLoading) return <div>Loading...</div>;
     if (error) return <div>Error loading product.</div>;
-    if (!data || data.length === 0) return <div>No product found.</div>;
-
-    const product = data[0];
+    if (!data ) return <div>No product found.</div>;
+    const product = data;
     const productDetailImages = [product.img, product.imgHover];
 
     const handleOptionClick = (option: string) => {
@@ -35,7 +37,13 @@ function ProductDetail() {
                 options: [selectedOption],
             };
             addItemToCart(itemToAdd);
-        }
+
+            toast({
+                title: 'Sản phẩm đã được thêm vào giỏ hàng',
+                description: 'Bạn có thể tiếp tục mua sắm hoặc đi tới giỏ hàng để thanh toán.',
+                duration: 3000,
+            });
+        } 
     };
 
     return (

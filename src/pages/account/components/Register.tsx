@@ -1,5 +1,4 @@
 import Layout from "@/components/layout/_root/Layout";
-import { Link } from "react-router-dom";
 
 function Register() {
 

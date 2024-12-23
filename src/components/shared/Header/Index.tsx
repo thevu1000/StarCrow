@@ -19,7 +19,6 @@ const Header = () => {
   const cartItems = useCartStore(state => state.items);
   const [showCart, setShowCart] = useState<boolean>(false);
   const [showMenu, setShowMenu] = useState<boolean>(false);
-  const [activeMenuItem, setActiveMenuItem] = useState<string | null>(null);
   const [selectedLanguage, setSelectedLanguage] = useState<string>('en');
   const totalItems = cartItems.reduce((acc: number, item: { quantity: number }) => acc + item.quantity, 0);
 

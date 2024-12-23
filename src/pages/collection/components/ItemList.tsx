@@ -15,7 +15,6 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Product, FilterOption } from "@/types/type";
-import { useParams } from "react-router-dom";
 
 interface ItemListProps {
     filter: FilterOption[];
@@ -27,7 +26,6 @@ interface ItemListProps {
 }
 
 function ItemList({ filter, footwearItems, brandName, type, url, total }: ItemListProps) {
-    const params = useParams();
     
     const [openAccordionIndex, setOpenAccordionIndex] = useState<number | null>(null);
 
