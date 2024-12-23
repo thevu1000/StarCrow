@@ -43,8 +43,8 @@ function AsicsFootwear() {
                         ))
                     )}
                 </CarouselContent>
-                <CarouselPrevious className="hidden lg:block bg-black text-white hover:bg-black hover:text-white" />
-                <CarouselNext className="hidden lg:block bg-black text-white hover:bg-black hover:text-white" />
+                <CarouselPrevious className="hidden lg:flex justify-center bg-black text-white hover:bg-black hover:text-white" />
+                <CarouselNext className="hidden lg:flex justify-center bg-black text-white hover:bg-black hover:text-white" />
             </Carousel>
         </div>
     );

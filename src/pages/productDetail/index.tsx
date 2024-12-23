@@ -43,7 +43,13 @@ function ProductDetail() {
                 description: 'Bạn có thể tiếp tục mua sắm hoặc đi tới giỏ hàng để thanh toán.',
                 duration: 3000,
             });
-        } 
+        } else {
+            toast({
+                title: 'Vui lòng chọn size',
+                variant: "destructive",
+                duration: 3000,
+            });
+        }
     };
 
     return (
