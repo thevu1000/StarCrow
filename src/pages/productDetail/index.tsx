@@ -22,7 +22,7 @@ function ProductDetail() {
     const { toast } = useToast()
     if (isLoading) return <div>Loading...</div>;
     if (error) return <div>Error loading product.</div>;
-    if (!data ) return <div>No product found.</div>;
+    if (!data) return <div>No product found.</div>;
     const product = data;
     const productDetailImages = [product.img, product.imgHover];
 
