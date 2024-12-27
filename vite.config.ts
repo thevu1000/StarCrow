@@ -6,15 +6,7 @@ import path from 'path'
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 3000,
-    proxy: {
-      // Cấu hình proxy để yêu cầu API chuyển tiếp đến json-server
-      '/api': {
-        target: 'http://localhost:5000', // Địa chỉ json-server đang chạy
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '') // Loại bỏ /api khỏi URL khi gửi yêu cầu
-      }
-    }
+    port: 3000
   },
   css: {
     devSourcemap: true
