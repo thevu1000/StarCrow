@@ -22,7 +22,7 @@ function Pagination({ total }: PaginationProps) {
                 <Chevron className="h-[15px] rotate-[-270deg] text-white" />
             </Link>
             <div className="flex gap-8">
-                {pagesArray.map((item, index) => (
+                {pagesArray.map((_, index) => (
                     <Link
                         key={index}
                         className={`text-[30px] ${currentPage === index + 1 ? 'text-gray-500 font-bold' : 'text-gray-400'} cursor-pointer`}
