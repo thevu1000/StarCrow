@@ -9,7 +9,8 @@ interface PaginationProps {
 function Pagination({ total }: PaginationProps) {
     const { currentPage, setCurrentPage } = usePaginationStore();
     const pagesArray = new Array(total).fill(0);
-
+    console.log(pagesArray);
+    
     return (
         <div className="flex items-center space-x-4 font-prompt font-black container mx-auto justify-center relative">
             <Link
@@ -21,7 +22,7 @@ function Pagination({ total }: PaginationProps) {
                 <Chevron className="h-[15px] rotate-[-270deg] text-white" />
             </Link>
             <div className="flex gap-8">
-                {pagesArray.map((index) => (
+                {pagesArray.map((item, index) => (
                     <Link
                         key={index}
                         className={`text-[30px] ${currentPage === index + 1 ? 'text-gray-500 font-bold' : 'text-gray-400'} cursor-pointer`}
